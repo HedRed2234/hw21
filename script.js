@@ -17,7 +17,7 @@ document.getElementById("addBtn")
 
   let id=document.getElementById("id").value;
 
-  let duplicate = contacts.find(function(contact){
+  let duplicate=contacts.find(function(contact){
     return contact.id===id;
   });
 
@@ -40,6 +40,12 @@ document.getElementById("addBtn")
   );
 
   renderContacts();
+
+  document.getElementById("name").value="";
+
+  document.getElementById("phone").value="";
+
+  document.getElementById("id").value="";
 });
 
 
